@@ -5,6 +5,8 @@ import os
 import folium.plugins
 from map import generate_map
 from  vk_api import get_photos
+from models import db
+
 
 POSTGRES = {
     'user': 'portal',
@@ -14,11 +16,14 @@ POSTGRES = {
     'port': '5432',
 }
 app = Flask(__name__)
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 'postgresql://{user}:{pw}@{host}:{port}/{db}'.format(
-                                                                  user=POSTGRES['user'], pw=POSTGRES['pw'],
-                                                                  db=POSTGRES['db'], host=POSTGRES['host'],
+app.config['DEBUG'] = True
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{user}:{pw}@{host}:{port}/{db}'.format(
+                                                                  user=POSTGRES['user'],
+                                                                  pw=POSTGRES['pw'],
+                                                                  db=POSTGRES['db'],
+                                                                  host=POSTGRES['host'],
                                                                   port=POSTGRES['port'])
-db = SQLAlchemy(app)
+db.init_app(app)
 
 @app.route("/", methods=['GET', 'POST'])
 def main():
