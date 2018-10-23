@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_8cba6962056745ef9b7f310d0c2482e3 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_8cba6962056745ef9b7f310d0c2482e3" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_8cba6962056745ef9b7f310d0c2482e3 = L.map(
+        'map_8cba6962056745ef9b7f310d0c2482e3', {
+        center: [55.75222, 37.61556],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_49457b15151842dbb67890222bf5d637 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_8cba6962056745ef9b7f310d0c2482e3);
+    
+            var marker_cluster_6b2740841d2949a9b253cb3eef9d0606 = L.markerClusterGroup({});
+            map_8cba6962056745ef9b7f310d0c2482e3.addLayer(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+            
+    
+        var marker_2aaac23d3dfc475aa9cbfd1a7b8ac68f = L.marker(
+            [47.884716999999995, 35.022737],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_1aa0d32c717e4ae09e6e801774278906 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2aaac23d3dfc475aa9cbfd1a7b8ac68f.setIcon(icon_1aa0d32c717e4ae09e6e801774278906);
+            
+    
+            var popup_542c7a14288b47b4a3ece1e07715fa65 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d19813df39784e4b927966afad5d4700 = $('<div id="html_d19813df39784e4b927966afad5d4700" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:35</div>')[0];
+                popup_542c7a14288b47b4a3ece1e07715fa65.setContent(html_d19813df39784e4b927966afad5d4700);
+            
+
+            marker_2aaac23d3dfc475aa9cbfd1a7b8ac68f.bindPopup(popup_542c7a14288b47b4a3ece1e07715fa65)
+            ;
+
+            
+        
+    
+        marker_2aaac23d3dfc475aa9cbfd1a7b8ac68f.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_bcfd5a1e69ed48a081a5c5a784289cc2 = L.marker(
+            [47.884961, 35.022341],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_9e457afb9ab1467081d8bba5e08333f6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bcfd5a1e69ed48a081a5c5a784289cc2.setIcon(icon_9e457afb9ab1467081d8bba5e08333f6);
+            
+    
+            var popup_92d85ec50352494ba0d491c01a0a4420 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ff3aca259d074ed4a86e4b90dd4e99fd = $('<div id="html_ff3aca259d074ed4a86e4b90dd4e99fd" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:34</div>')[0];
+                popup_92d85ec50352494ba0d491c01a0a4420.setContent(html_ff3aca259d074ed4a86e4b90dd4e99fd);
+            
+
+            marker_bcfd5a1e69ed48a081a5c5a784289cc2.bindPopup(popup_92d85ec50352494ba0d491c01a0a4420)
+            ;
+
+            
+        
+    
+        marker_bcfd5a1e69ed48a081a5c5a784289cc2.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_4d96629955ee4deda81dd1cef071519d = L.marker(
+            [47.884716999999995, 35.022737],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_4ad975a82571403ca581e267612edded = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d96629955ee4deda81dd1cef071519d.setIcon(icon_4ad975a82571403ca581e267612edded);
+            
+    
+            var popup_b64828446bca4bcf9d73f33ffc7a698c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ea06635f69034af49322bd72ac275310 = $('<div id="html_ea06635f69034af49322bd72ac275310" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:32</div>')[0];
+                popup_b64828446bca4bcf9d73f33ffc7a698c.setContent(html_ea06635f69034af49322bd72ac275310);
+            
+
+            marker_4d96629955ee4deda81dd1cef071519d.bindPopup(popup_b64828446bca4bcf9d73f33ffc7a698c)
+            ;
+
+            
+        
+    
+        marker_4d96629955ee4deda81dd1cef071519d.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_9b72f1d9881b41248ed265e8545b8a53 = L.marker(
+            [47.884778000000004, 35.02267],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_087c5b11050d4fcd8694f7af22366a2e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b72f1d9881b41248ed265e8545b8a53.setIcon(icon_087c5b11050d4fcd8694f7af22366a2e);
+            
+    
+            var popup_f53138633cc542278c24414fdd466a82 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b31822cb62064ab59cd122d9beae03d1 = $('<div id="html_b31822cb62064ab59cd122d9beae03d1" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:31</div>')[0];
+                popup_f53138633cc542278c24414fdd466a82.setContent(html_b31822cb62064ab59cd122d9beae03d1);
+            
+
+            marker_9b72f1d9881b41248ed265e8545b8a53.bindPopup(popup_f53138633cc542278c24414fdd466a82)
+            ;
+
+            
+        
+    
+        marker_9b72f1d9881b41248ed265e8545b8a53.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_2c4da371eaa04422b6868ac2d352b155 = L.marker(
+            [47.884534, 35.022199],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_5a04c4e4f726400490f2132d12754856 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2c4da371eaa04422b6868ac2d352b155.setIcon(icon_5a04c4e4f726400490f2132d12754856);
+            
+    
+            var popup_dda1b805bfe04b6bbab967f12a147abd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6f4c1fd67d94148a521cf786f8e888b = $('<div id="html_e6f4c1fd67d94148a521cf786f8e888b" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:29</div>')[0];
+                popup_dda1b805bfe04b6bbab967f12a147abd.setContent(html_e6f4c1fd67d94148a521cf786f8e888b);
+            
+
+            marker_2c4da371eaa04422b6868ac2d352b155.bindPopup(popup_dda1b805bfe04b6bbab967f12a147abd)
+            ;
+
+            
+        
+    
+        marker_2c4da371eaa04422b6868ac2d352b155.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_80bbb0ed32724612a3c62b13d0c54660 = L.marker(
+            [47.884561, 35.022574],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_c460d1da9d044a168754ace6d34bc008 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_80bbb0ed32724612a3c62b13d0c54660.setIcon(icon_c460d1da9d044a168754ace6d34bc008);
+            
+    
+            var popup_33b1a3faed8d41f3b1fa2f7c9e7c0552 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7821a47441764e31ba497a67b1d964d9 = $('<div id="html_7821a47441764e31ba497a67b1d964d9" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:28</div>')[0];
+                popup_33b1a3faed8d41f3b1fa2f7c9e7c0552.setContent(html_7821a47441764e31ba497a67b1d964d9);
+            
+
+            marker_80bbb0ed32724612a3c62b13d0c54660.bindPopup(popup_33b1a3faed8d41f3b1fa2f7c9e7c0552)
+            ;
+
+            
+        
+    
+        marker_80bbb0ed32724612a3c62b13d0c54660.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_f34be3dd9f4d4b4dae4da1eee9945197 = L.marker(
+            [47.884634999999996, 35.022911],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_75d45ea06cf2410693ed2b06927088dd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f34be3dd9f4d4b4dae4da1eee9945197.setIcon(icon_75d45ea06cf2410693ed2b06927088dd);
+            
+    
+            var popup_13f431f2da8a42febb1786efba13c6d5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_38cae35718104981b7aef8ea4e7b1a7f = $('<div id="html_38cae35718104981b7aef8ea4e7b1a7f" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:27</div>')[0];
+                popup_13f431f2da8a42febb1786efba13c6d5.setContent(html_38cae35718104981b7aef8ea4e7b1a7f);
+            
+
+            marker_f34be3dd9f4d4b4dae4da1eee9945197.bindPopup(popup_13f431f2da8a42febb1786efba13c6d5)
+            ;
+
+            
+        
+    
+        marker_f34be3dd9f4d4b4dae4da1eee9945197.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_db35304f9cd448c58a89eee2089c8275 = L.marker(
+            [47.884254999999996, 35.022729999999996],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_7738c467d08e44869ca3c23ba8ebebb0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_db35304f9cd448c58a89eee2089c8275.setIcon(icon_7738c467d08e44869ca3c23ba8ebebb0);
+            
+    
+            var popup_de2f3d024a2c45ff89ab41e1e5b51b7f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_465cc8ceea2e4633a20ec53a83ba7b78 = $('<div id="html_465cc8ceea2e4633a20ec53a83ba7b78" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:25</div>')[0];
+                popup_de2f3d024a2c45ff89ab41e1e5b51b7f.setContent(html_465cc8ceea2e4633a20ec53a83ba7b78);
+            
+
+            marker_db35304f9cd448c58a89eee2089c8275.bindPopup(popup_de2f3d024a2c45ff89ab41e1e5b51b7f)
+            ;
+
+            
+        
+    
+        marker_db35304f9cd448c58a89eee2089c8275.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_d8994b9359844e44866efa4b1707483f = L.marker(
+            [47.884335, 35.022684000000005],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_6b2740841d2949a9b253cb3eef9d0606);
+        
+    
+
+                var icon_e440728362a44dcc9aaf217bc6b40a6f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d8994b9359844e44866efa4b1707483f.setIcon(icon_e440728362a44dcc9aaf217bc6b40a6f);
+            
+    
+            var popup_82bda4db93a94743b3cba117acb5628c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ec413c44f1ef4e86b0181553fb340c59 = $('<div id="html_ec413c44f1ef4e86b0181553fb340c59" style="width: 100.0%; height: 100.0%;">2018-10-09 22:07:24</div>')[0];
+                popup_82bda4db93a94743b3cba117acb5628c.setContent(html_ec413c44f1ef4e86b0181553fb340c59);
+            
+
+            marker_d8994b9359844e44866efa4b1707483f.bindPopup(popup_82bda4db93a94743b3cba117acb5628c)
+            ;
+
+            
+        
+    
+        marker_d8994b9359844e44866efa4b1707483f.bindTooltip(
+            '<div>'
+            + 'Нажми на меня' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
