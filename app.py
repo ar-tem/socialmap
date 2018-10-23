@@ -41,6 +41,10 @@ def map ():
   map_markers = generate_map(result)
   return map_markers.render()
 
+@app.route("/plot", methods=['GET'])
+def plot():
+  return 'Если повезет, то тут будут графики'
+
 @app.route("/auth", methods=['GET'])
 def auth_inst():
   print(request.args.get('code'))

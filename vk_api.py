@@ -50,7 +50,6 @@ def get_photos(tag):
                         user_img = result_json['response'][post]['src']
                         user_text = result_json['response'][post]['text']
                         coordinates += [[time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(created)),lat,long, user_img, user_text]]
-
                         print (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(created)), lat, long, user_img, user_text)
                 offset += count                                    #меняем смещение выборки при каждой итерации
                 iter_count += 1
