@@ -2,6 +2,7 @@ import folium.plugins
 from folium import IFrame
 import pandas as pd
 
+
 def generate_map(map_data):
     main_map = folium.Map(location=[55.7522200, 37.6155600],
                           tiles='Stamen Toner',

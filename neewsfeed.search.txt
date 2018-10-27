@@ -1,0 +1,5 @@
+https://api.vk.com/method/newsfeed.search?access_token=27170f9e27170f9e27170f9ee42771409f2271727170f9e7cbae4c42055c302ffa7cf16&q=python&v=5.58
+
+https://api.vk.com/method/newsfeed.search?access_token=27170f9e27170f9e27170f9ee42771409f2271727170f9e7cbae4c42055c302ffa7cf16&q=%D0%BF%D1%8F%D1%82%D0%B5%D1%80%D0%BE%D1%87%D0%BA%D0%B0&v=5.58
+
+https://api.vk.com/method/newsfeed.search?access_token=27170f9e27170f9e27170f9ee42771409f2271727170f9e7cbae4c42055c302ffa7cf16&q=%D0%BF%D1%8F%D1%82%D0%B5%D1%80%D0%BE%D1%87%D0%BA%D0%B0&v=5.58

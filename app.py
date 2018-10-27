@@ -2,10 +2,13 @@ from flask import Flask, request, render_template
 import requests
 from flask_sqlalchemy import SQLAlchemy
 import os
+import io
 import folium.plugins
 from map import generate_map
 from  vk_api import get_photos
 from models import db
+from words_cloud import render_cloud
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
 
 POSTGRES = {
@@ -41,9 +44,16 @@ def map ():
   map_markers = generate_map(result)
   return map_markers.render()
 
-@app.route("/plot", methods=['GET'])
-def plot():
-  return 'Если повезет, то тут будут графики'
+@app.route("/plot.png")
+def plot_png():
+  cloud = render_cloud()
+  output = io.BytesIO()
+  FigureCanvas(cloud).print_png(output)
+  return Response(output.getvalue(), mimetype='image/png')
+
+@app.route("/table", methods=['GET'])
+def table():
+  return 'Если повезет, то тут будут таблицы'
 
 @app.route("/auth", methods=['GET'])
 def auth_inst():

@@ -44,12 +44,17 @@
       </nav>
     <center><img src='https://media.giphy.com/media/sSgvbe1m3n93G/giphy.gif' id='loading'/></center>
     <iframe src="/map?tag_search={{tag}}" width="70%" height="500" align="left" hidden="true" id='mapframe'></iframe>
-    <iframe width="30%" height="500" src="/plot" id='plotframe'></iframe>
+    <iframe width="30%" height="250" src="/plot" id='plotframe'></iframe>
+    <iframe width="30%" height="250" src="/table" id='tableframe'></iframe>
 	<script>
     	var mapframe = document.querySelector('#mapframe');
       var plotframe = document.querySelector('#plotframe');
+      var tableframe = document.querySelector('#tableframe');
       plotframe.addEventListener('load', function () {
         plotframe.hidden = true;
+      });
+      tableframe.addEventListener('load', function () {
+        tableframe.hidden = true;
       });
   		mapframe.addEventListener('load', function () {
         mapframe.hidden = false;
